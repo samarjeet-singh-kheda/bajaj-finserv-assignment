@@ -5,7 +5,9 @@ import { handlePostRequest, handleGetRequest } from "./helper.js";
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(
+  cors({ origin: "https://bajaj-finserv-assignment-samarjeet.vercel.app" })
+);
 
 app.post("/api", handlePostRequest);
 app.get("/api", handleGetRequest);
