@@ -9,8 +9,8 @@ app.use(
   cors({ origin: "https://bajaj-finserv-assignment-samarjeet.vercel.app" })
 );
 
-app.post("/api", handlePostRequest);
-app.get("/api", handleGetRequest);
+app.post("/bfhl", handlePostRequest);
+app.get("/bfhl", handleGetRequest);
 
 const PORT = 3000;
 
