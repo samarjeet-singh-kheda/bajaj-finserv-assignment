@@ -16,7 +16,7 @@ const App = () => {
       const parsedInput = JSON.parse(jsonInput);
 
       const response = await axios.post(
-        "http://localhost:3000/api",
+        "https://bajaj-finserv-assignment-ufb5.onrender.com/api",
         parsedInput
       );
       setResponseData(response.data);
